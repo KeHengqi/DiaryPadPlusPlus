@@ -1,0 +1,85 @@
+#Navbar {
+    box-shadow: 0px 5px 3px grey;
+}
+
+html, body {
+    width: 100%;
+    height: 100%;
+    margin: 0 auto;
+}
+
+#page-container {
+    width: 100%;
+    height: 100%;
+    margin: 0 auto;
+}
+
+#Container {
+    width: 100%;
+    height: 100%;
+    margin: 0 auto;
+}
+
+.recommendation {
+    border-radius: 7px;
+    box-shadow: 0px 2px 5px dimgray;
+    margin: 0 auto;
+    margin-top: 60px;
+    height: 300px;
+    width: 40%;
+}
+
+#recommendation-head {
+    margin: 0 auto;
+    margin-top: 80px;
+    height: 10px;
+    width: 40%;
+}
+
+.article {
+    width: 50%;
+    height: 100%;
+    margin: 0;
+    margin-right: 0;
+    margin-left: 0;
+    margin-top: 0;
+    margin-bottom: 0;
+    padding: 0;
+    border: 0;
+    border-radius: 7px;
+    font-family: 'Noto Serif SC', serif;
+}
+
+/* .article-abstract{
+    width: 50%;
+    height: 100%;
+    margin: 0;
+    margin-right: 0;
+    margin-left: 0;
+    margin-top: 0;
+    margin-bottom: 0;
+    padding: 0;
+    border-radius: 7px;
+} */
+
+
+.article-right {
+    margin-left: 110%;
+    padding-top: 10%;
+    width: 90%;
+    border-radius: 7px;
+}
+
+.article-title{
+    font-size: 25px;
+    line-height: 50px;
+}
+
+.article-subtitle{
+    font-size: 20px;
+    color: grey;
+}
+
+.article-abstract{
+    font-size: 20px;
+}
