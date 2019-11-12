@@ -1,0 +1,127 @@
+#Navbar {
+    box-shadow: 0px 5px 3px grey;
+}
+
+html, body {
+    width: 100%;
+    height: 100%;
+    margin: 0 auto;
+}
+
+#page-container {
+    width: 100%;
+    height: 100%;
+    margin: 0 auto;
+}
+
+#Container {
+    width: 100%;
+    height: 100%;
+    margin: 0 auto;
+}
+
+.recommendation {
+    border-radius: 7px;
+    box-shadow: 0px 2px 5px dimgray;
+    margin: 0 auto;
+    margin-top: 60px;
+    height: 300px;
+    width: 50%;
+}
+
+#recommendation-head {
+    margin: 0 auto;
+    margin-left: 25%;
+    margin-top: 80px;
+    height: 10px;
+    width: 40%;
+}
+
+.article-title{
+    font-size: 25px;
+    line-height: 50px;
+}
+
+.article-view-and-comment{
+    font-size: 15px;
+    font-family: 'Noto Serif SC', serif;
+}
+
+.article {
+    width: 50%;
+    height: 100%;
+    margin: 0;
+    margin-right: 0;
+    margin-left: 0;
+    margin-top: 0;
+    margin-bottom: 0;
+    padding: 0;
+    border: 0;
+    border-radius: 7px;
+    font-family: 'Noto Serif SC', serif;
+}
+
+.odd-recommendation-para {
+    width: 50%;
+    height: 100%;
+    position: relative;
+    left: 55%;
+    top: -90%;
+}
+
+.odd-recommendation-pic {
+    width: 50%;
+    height: 100%;
+    border-radius: 7px;
+}
+
+.eve-recommendation-pic{
+    width: 50%;
+    height: 100%;
+    position: relative;
+    left: 50%;
+    top: -100%;
+    background-size: cover;
+    border-radius: 7px;
+}
+
+.eve-recommendation-para{
+    width: 50%;
+    height: 100%;
+    padding-top: 3%;
+    padding-left: 5%;
+}
+
+.article-abstract{
+    width: 85%;
+    text-justify: inter-ideograph;
+    text-indent: 2em;
+}
+
+.bottom-block{
+    width: 100%;
+    height: 200px;
+}
+
+.next-button{
+    margin: 0 auto;
+    margin-top: 4%;
+    width: 10%;
+    height: 30%;
+    border: 1.5px solid rgb(201, 199, 199);
+    border-radius: 13px;
+    font-family: 'Noto Serif SC', serif;
+    text-align: center;
+    vertical-align: middle;
+}
+
+.tool{
+    position: absolute;
+    left: 95%;
+    top: 40%;
+    width: 70px;
+    height: 150px;
+    border-radius: 7px;
+    box-shadow: 0px 1px 4px grey;
+    opacity: 0.4;
+}

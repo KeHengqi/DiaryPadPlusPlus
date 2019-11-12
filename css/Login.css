@@ -20,16 +20,18 @@ body {
 	background-color: white;
 	width: 50%;
 	max-width: 330px;
-	height: 63%;
+	max-height: 800px;
+	height: 90%;
 	opacity: 0.8;
 	align-content: center;
 	position: relative;
 	margin: 0 auto;
-	margin-top: 100px;
+	margin-top: 50px;
+	text-align: center;
 }
 
 h5 {
-	padding-left: 90px;
+	text-align: center;
 	padding-top: 30px;
 }
 
@@ -41,7 +43,6 @@ h5 {
 }
 
 #loginButton {
-	margin-left: 5%;
 	max-width: 300px;
 	width: 90%;
 }
@@ -55,6 +56,9 @@ h5 {
 	color: rgb(29, 161, 243);
 }
 
+#wechat-icon{
+	color: rgb(0,173,25);
+}
 #weibo-icon {
 	background-image: url("../img/weibo-icon.png");
 	width: 5px;
@@ -70,8 +74,21 @@ h5 {
 	height: 100px;
 	border-radius: 50%;
 	margin: 0 auto;
+	margin-top: 20%;
+	position: relative;
 }
 
 #input-form{
 	margin-bottom: 20px;
+}
+
+
+
+a:hover{text-decoration: none;}
+#iconSet{
+	margin-top: 25%;
+}
+
+#authorMessage{
+	text-align: center;
 }
