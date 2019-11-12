@@ -8,18 +8,13 @@
 		<link href="./css/bootstrap.min.css" rel="stylesheet" type="text/css"/>
 		<script src="./js/bootstrap.min.js" type="text/javascript"></script>
 		<link href="./font-awesome-4.7.0/css/font-awesome.min.css" rel="stylesheet" type="text/css" />
-		<link href="./css/Login.css" type="text/css" rel="stylesheet" />
-		<link href="https://fonts.font.im/css?family=Italianno" rel="stylesheet">
-        <link href="https://fonts.font.im/css?family=Amita" rel="stylesheet">
-        <link href="https://fonts.font.im/css?family=Dancing Script" rel="stylesheet">
-        <link href="https://fonts.font.im/css?family=Great Vibes" rel="stylesheet">
-        <link href="https://fonts.font.im/css?family=Seaweed Script" rel="stylesheet">
-		<link href="https://fonts.font.im/css?family=Alice" rel="stylesheet">
-		<link href="https://fonts.font.im/css?family=Croissant One" rel="stylesheet">
-		<script type="text/javascript">
+		<link href="./css/Regist.css" type="text/css" rel="stylesheet" />
+        <link href="https://fonts.font.im/css?family=Alice" rel="stylesheet">
+        <link href="https://fonts.font.im/css?family=Croissant One" rel="stylesheet">
+        <script type="text/javascript">
 				$(function(){
 					
-					$("#loginPage").backstretch([
+					$("#registPage").backstretch([
 						"./img/img01.jpg",
 						"./img/img02.jpg",
 						"./img/img03.jpg",
@@ -64,21 +59,19 @@
 		</script>
 	</head>
 	<body>
-		<div id="loginPage" >
-			<section id="Login" class="rounded">
-				<h1>DairyPad</h1>
-				<section id="slogan">
-					Make your<br/> moment<br/>be precious
-				</section>
-				<div id="user-icon"></div>
+		<div id="registPage" >
+			<section id="Regist" class="rounded">
+                <h1>DairyPad</h1>
+                <section id="slogan">
+                   Make your<br/> moment<br/>be precious
+                </section>
 				<form action="" method="get" id="input-form">
 					<section class="form-group rounded" id="inputGroup">
-						<input type="text" style="width: 100%; height: 40px;" class="form-control" placeholder="Username/Email" />
+						<input type="text" style="width: 100%; height: 40px;" class="form-control" placeholder="Email:" id="email" />
 						<input type="text"  style="width: 100%; height: 40px; margin-top: 10px;" class="form-control" placeholder="Password"/>
 					</section>
 					<input type="button" class="btn btn-primary" id="loginButton" value="Login" />
 					<br/>
-					<a href="main-page.html">Or view as guest</a>
 				</form>
 				
 				<section id="iconSet">
@@ -91,10 +84,6 @@
 				
 				<section id="authorMessage">
 				</section>
-				<section id="registPart">
-					<a style="margin-top: 10%;" href="regist.html">Why not join us?</a>
-				</section>
-
 				
 			</section>
 		</div>
