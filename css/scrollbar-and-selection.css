@@ -66,19 +66,19 @@
 ::selection {
     background: rgba(32, 178, 170, .6);
     color: #ffffff;
-    }
-    
-    ::-moz-selection {
+}
+
+::-moz-selection {
     background: rgba(32, 178, 170, .6);
     color: #ffffff;
-    }
-    
-    ::selection {
+}
+
+::selection {
     background: rgba(32, 178, 170, .6);
     color: #ffffff;
-    }
-    
-    ::-moz-selection {
+}
+
+::-moz-selection {
     background: rgba(32, 178, 170, .6);
     color: #ffffff;
-    }
+}
