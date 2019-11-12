@@ -10,7 +10,7 @@ html, body {
     padding: 0;
 }
 
-/* ::-webkit-scrollbar {
+::-webkit-scrollbar {
     width: 7px;
     height: 10px;
 }
@@ -73,4 +73,4 @@ html, body {
 
 ::-webkit-scrollbar-button:end:active {
     background: url(../images/scrollbar_arrow.png) no-repeat -30px -18px;
-} */
+}
