@@ -73,6 +73,7 @@ html, body {
     width: 50%;
     height: 100%;
     border-radius: 7px;
+    background-size: cover;
 }
 
 .eve-recommendation-pic{
