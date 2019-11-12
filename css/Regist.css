@@ -36,6 +36,7 @@ body {
     word-break: break-all;
     line-height: 15px;
 }
+input:-webkit-autofill { box-shadow: 0 0 0px 1000px white inset !important;}
 
 h1 {
 	text-align: center;
@@ -52,7 +53,10 @@ h1 {
 	width: 90%;
 }
 
-#loginButton {
+input::-webkit-input-placeholder{
+    color: red;
+}
+#registButton {
 	max-width: 300px;
 	width: 90%;
 }
@@ -77,7 +81,7 @@ h1 {
 
 
 #input-form{
-	margin-bottom: 20px;
+    margin-bottom: 20px;
 }
 
 
