@@ -27,6 +27,7 @@ body {
 	position: relative;
 	margin: 0 auto;
 	margin-top: 50px;
+	text-align: center;
 }
 
 h5 {
@@ -42,7 +43,6 @@ h5 {
 }
 
 #loginButton {
-	margin-left: 5%;
 	max-width: 300px;
 	width: 90%;
 }
@@ -82,14 +82,11 @@ h5 {
 	margin-bottom: 20px;
 }
 
-a {
-	margin: 0 auto;
-	padding-left: 27%;
-}
+
+
 a:hover{text-decoration: none;}
 #iconSet{
 	margin-top: 25%;
-	text-align: center;
 }
 
 #authorMessage{
