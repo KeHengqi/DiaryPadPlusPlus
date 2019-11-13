@@ -1,7 +1,8 @@
-$(document).ready(function(){
+var dayNightMode = 0;
+$(document).ready(function () {
     var editor = editormd('editor', {
-        width: '96%',
-        height: '91%',
+        width: '100%',
+        height: '100%',
         emoji: true,
         taskList: true,
         syncScrolling: true,
@@ -11,32 +12,64 @@ $(document).ready(function(){
         htmlDecode: true,
         htmlDecode: 'center,br,sup,sub,img,iframe|*',
         pageBreak: true,
-        gotoLine: true
+        gotoLine: true,
+        toolbarIcons: function () {
+            return ['comeBack','undo', 'redo', '|', 'bold', 'italic', 'del', 'hr', 'quote', '|', 'h1', 'h2', 'h3', 'h4', 'h5', 'h6', '|', 'list-ul', 'list-ol', '|', 'fullscreen', 'info', 'watch', 'goto-line', '|', 'emoji', 'image', 'link', 'code-block', 'table', '|', 'dayAndNight', 'draft', 'summit'];
+        },
+        toolbarIconTexts: {
+            draft: '保存草稿',
+            summit: '发布文章',
+            dayAndNight: '切换日间/夜间模式',
+            comeBack: "<i class='fa fa-arrow-left'></i><span>&nbsp;&nbsp;回到主页</span>"
+        },
+        // toolbarCustomIcons: {
+        //     comeBack: "<i class='fa fa-arrow-left'></i><span>回到主页</span>"
+        // },
+        toolbarHandlers: {
+            dayAndNight: function () {
+                console.log('dayNightMode = ' + dayNightMode);
+                if (dayNightMode % 2 == 0) {
+                    console.log('here');
+                    editor.setTheme('dark');
+                    editor.setEditorTheme('lesser-dark');
+                    editor.setPreviewTheme('dark');
+                } else {
+                    editor.setTheme('default');
+                    editor.setEditorTheme('default');
+                    editor.setPreviewTheme('default');
+                }
+                dayNightMode++;
+                // alert('debug');
+            },
+            comeBack: function(){
+                window.location.href = './main-page.html'
+            }
+        }
     });
 
     editormd.katexURL = {
-        js : './katex/katex.min',
+        js: './katex/katex.min',
         css: './katex/katex.min'
     };
-    
+
     editormd.emoji = {
         // path: './emoji/',
         path: 'http://www.webpagefx.com/tools/emoji-cheat-sheet/graphics/emojis/',
         ext: '.png'
     }
 
-    $('#editormd-theme-select').change(function(){
+    $('#editormd-theme-select').change(function () {
         let toolbar_theme = $(this).find('option:selected').text();
         //console.log($(this).find('option:selected').text());
         editor.setTheme(toolbar_theme);
     });
 
-    $('#editor-area-theme-select').change(function(){
+    $('#editor-area-theme-select').change(function () {
         let edit_area_theme = $(this).find('option:selected').text();
         editor.setEditorTheme(edit_area_theme);
     });
 
-    $('#preview-area-theme-select').change(function(){
+    $('#preview-area-theme-select').change(function () {
         let preview_area_theme = $(this).find('option:selected').text();
         editor.setPreviewTheme(preview_area_theme);
     });
