@@ -1,7 +1,7 @@
 $(document).ready(function(){
     var editor = editormd('editor', {
-        width: '100%',
-        height: '93%',
+        width: '96%',
+        height: '91%',
         emoji: true,
         taskList: true,
         syncScrolling: true,
