@@ -59,7 +59,39 @@
 					});
 
 					$("#loginButton").click(function(){
+						var user = $("#username").val();
+						var pass = $("#password").val();
+						if(user==""||user==null||pass==null||pass==""){
+							if(user==""||user==null){
+								$("#erroruser").text("Username/Email can't be empty!");
+							}	
+							if(pass==""||pass==null){
+								$("#errorpass").text("Password can't be empty!");
+							}
+						}
+						else{
 						window.location.href="main-page.html";
+						}
+					});
+
+					$("#username").blur(function(){
+						var user = $("#username").val();
+						if(user==""||user==null){
+							$("#erroruser").text("Username/Email can't be empty!");
+						}
+						else{
+							$("#erroruser").text("");
+						}
+					});
+
+					$("#password").blur(function(){
+						var pass = $("#password").val();
+						if(pass==""||pass==null){
+							$("#errorpass").text("Password can't be empty!");
+						}
+						else{
+							$("#errorpass").text("");
+						}
 					});
 				});
 		</script>
@@ -74,8 +106,10 @@
 				<div id="user-icon"></div>
 				<form action="" method="get" id="input-form">
 					<section class="form-group rounded" id="inputGroup">
-						<input type="text" style="width: 100%; height: 40px;" class="form-control" placeholder="Username/Email:" />
-						<input type="text"  style="width: 100%; height: 40px; margin-top: 10px;" class="form-control" placeholder="Password:"/>
+						<input type="text" style="width: 100%; height: 40px;" class="form-control" placeholder="Username/Email:" id="username"/>
+						<div id="erroruser" class="error" ></div>
+						<input type="password"  style="width: 100%; height: 40px; margin-top: 10px;" class="form-control" id="password" placeholder="Password:"/>
+						<div id="errorpass" class="error" ></div>
 					</section>
 					<input type="button" class="btn btn-primary" id="loginButton" value="Login" />
 					<br/>
