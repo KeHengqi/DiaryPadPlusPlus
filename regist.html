@@ -204,7 +204,37 @@
 				});
 
 				$("#registButton").click(function(){
-					window.location.href="login.html";
+					var email = $("#email").val();
+					var nick = $("#nickName").val();
+					var pass = $("#password").val();
+					var con = $("#retypePassword").val();
+					if(email==""||nick==""||pass==""||con==""){
+						if(email==""){
+							$("#errorEmailMessage").attr("class","error");
+							$("#errorEmailMessage").text("Email can't be empty!");
+							$("#email").addClass("is-invalid");
+						}
+						if(nick==""){
+							$("#errorNick").attr("class","error");
+							$("#errorNick").text("Nickname can't be empty!");
+							$("#nickName").addClass("is-invalid");
+						}
+						if(pass==""){
+							$("#errorPassword").attr("class","error");
+							$("#errorPassword").css("font-size","medium");
+							$("#errorPassword").text("Password can't be empty!");
+							$("#password").addClass("is-invalid");
+						}
+						if(con==""){
+							$("#errorRePassword").attr("class","error");
+							$("#errorRePassword").text("Confirm password can't be empty!");
+							$("#retypePassword").addClass("is-invalid");
+						}
+					}
+					else{
+						window.alert("Welcome to take part in DairyPad!");
+						window.location.href="login.html";
+					}
 				});
 
 				});
