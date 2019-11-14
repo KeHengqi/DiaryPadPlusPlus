@@ -237,6 +237,17 @@
 					}
 				});
 
+				$("#nickName").focus(function(){
+					$("#errorNick").attr("class","warning");
+					$("#errorNick").text("*No space is allowed");
+				});
+
+				$("#password").focus(function(){
+					$("#errorPassword").attr("class","warning");
+					$("#errorPassword").css("font-size","small");
+					$("#errorPassword").text("*At least 8 character, with at least one upper alphabet, one digit and one special character");
+				});
+
 				});
 		</script>
 	</head>
