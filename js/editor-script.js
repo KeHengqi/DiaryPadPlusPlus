@@ -14,6 +14,7 @@ $(document).ready(function () {
         htmlDecode: 'center,br,sup,sub,img,iframe|*',
         pageBreak: true,
         gotoLine: true,
+        placeholder: 'Enjoy Writing in DiaryPad...',
         toolbarIcons: function () {
             return ['comeBack','undo', 'redo', '|', 'bold', 'italic', 'del', 'hr', 'quote', '|', 'h1', 'h2', 'h3', 'h4', 'h5', 'h6', '|', 'list-ul', 'list-ol', '|', 'fullscreen', 'info', 'watch', 'goto-line', '|', 'emoji', 'image', 'link', 'code-block', 'table', '|', 'dayAndNight', 'draft', 'summit','userIcon'];
         },
