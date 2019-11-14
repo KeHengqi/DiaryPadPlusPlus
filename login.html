@@ -2,6 +2,7 @@
 <html>
 	<head>
 		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<title></title>
 		<script src="./js/jquery-3.4.1.min.js" type="text/javascript"></script>
 		<script src="./js/jquery.backstretch.min.js" type="text/javascript"></script>
@@ -19,7 +20,7 @@
 		<script type="text/javascript">
 				$(function(){
 					
-					$("#loginPage").backstretch([
+					$("body").backstretch([
 						"./img/img01.jpg",
 						"./img/img02.jpg",
 						"./img/img03.jpg",
@@ -60,6 +61,10 @@
 					},function(){
 						$("#authorMessage").text("");
 					});
+
+					$("#loginButton").click(function(){
+						window.location.href="main-page.html";
+					});
 				});
 		</script>
 	</head>
@@ -73,12 +78,15 @@
 				<div id="user-icon"></div>
 				<form action="" method="get" id="input-form">
 					<section class="form-group rounded" id="inputGroup">
-						<input type="text" style="width: 100%; height: 40px;" class="form-control" placeholder="Username/Email" />
-						<input type="text"  style="width: 100%; height: 40px; margin-top: 10px;" class="form-control" placeholder="Password"/>
+						<input type="text" style="width: 100%; height: 40px;" class="form-control" placeholder="Username/Email:" />
+						<input type="text"  style="width: 100%; height: 40px; margin-top: 10px;" class="form-control" placeholder="Password:"/>
 					</section>
 					<input type="button" class="btn btn-primary" id="loginButton" value="Login" />
 					<br/>
-					<a href="main-page.html">Or view as guest</a>
+					<a id="guest" href="main-page.html">Or view as guest</a>
+				<section id="registPart">
+					<a style="margin-top: 10%;" href="regist.html">Why not join us?</a>
+				</section>
 				</form>
 				
 				<section id="iconSet">
@@ -91,9 +99,7 @@
 				
 				<section id="authorMessage">
 				</section>
-				<section id="registPart">
-					<a style="margin-top: 10%;" href="regist.html">Why not join us?</a>
-				</section>
+				
 
 				
 			</section>

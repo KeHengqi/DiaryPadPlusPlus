@@ -7,7 +7,6 @@ html {
 body {
 	width: 100%;
 	height: 100%;
-	margin: 0 auto;
 }
 
 #registPage {
@@ -19,14 +18,14 @@ body {
 #Regist {
 	background-color: white;
 	width: 50%;
+	min-width: 300px;
 	max-width: 330px;
-	max-height: 800px;
-	height: 90%;
+	height: 700px;
 	opacity: 0.8;
 	align-content: center;
 	position: relative;
 	margin: 0 auto;
-	margin-top: 50px;
+	margin-top: 10px;
 	text-align: center;
 }
 
@@ -39,7 +38,7 @@ body {
 
 h1 {
 	text-align: center;
-    padding-top: 100px;
+    padding-top: 25px;
     font-family: 'Alice', cursive;
 
     font-size: 60px;
@@ -47,14 +46,37 @@ h1 {
 
 #inputGroup {
 	margin-left: 5%;
-	margin-top: 50px;
+	margin-top: 20px;
 	max-width: 350px;
 	width: 90%;
+	height: 300px;
 }
 
-#loginButton {
+#errorPassword{
+	font-size: small;
+}
+
+#registButton {
 	max-width: 300px;
-	width: 90%;
+	width: 100%;
+	margin-top: 10px;
+}
+
+.warning{
+	color: orange;
+	text-align: left;
+	padding-left: 10px;
+}
+
+.error{
+    color: red;
+    text-align: left;
+    padding-left: 10px;
+}
+
+#errorEmailMessage{
+    text-align: left;
+    padding-left: 10px;
 }
 
 #fb-icon {
