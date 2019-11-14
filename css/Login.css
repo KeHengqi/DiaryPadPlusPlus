@@ -7,26 +7,25 @@ html {
 body {
 	width: 100%;
 	height: 100%;
-	margin: 0 auto;
 }
 
 #loginPage {
 	width: 100%;
 	height: 100%;
-	position: absolute;
+	position: relative;
 }
 
 #Login {
 	background-color: white;
 	width: 50%;
+	min-width: 300px;
 	max-width: 330px;
-	max-height: 800px;
-	height: 90%;
+	height: 700px;
 	opacity: 0.8;
 	align-content: center;
 	position: relative;
 	margin: 0 auto;
-	margin-top: 60px;
+	margin-top: 10px;
 	text-align: center;
 }
 
@@ -92,11 +91,13 @@ h1 {
 	margin-bottom: 20px;
 }
 
-
+#guest{
+	font-size: 12px;
+}
 
 a:hover{text-decoration: none;}
 #iconSet{
-	margin-top: 10%;
+	margin-top: 15%;
 }
 
 #authorMessage{
@@ -105,5 +106,6 @@ a:hover{text-decoration: none;}
 }
 
 #registPart{
-	margin-top: 20px;
+	margin-top: 0px;
+	color: red;
 }
