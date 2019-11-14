@@ -1,4 +1,5 @@
 var dayNightMode = 0;
+var userIconTag = '<img src="./img/user-default-icon.png" width="21" height="21" style="border-radius: 50%"></img>';
 $(document).ready(function () {
     var editor = editormd('editor', {
         width: '100%',
@@ -14,17 +15,15 @@ $(document).ready(function () {
         pageBreak: true,
         gotoLine: true,
         toolbarIcons: function () {
-            return ['comeBack','undo', 'redo', '|', 'bold', 'italic', 'del', 'hr', 'quote', '|', 'h1', 'h2', 'h3', 'h4', 'h5', 'h6', '|', 'list-ul', 'list-ol', '|', 'fullscreen', 'info', 'watch', 'goto-line', '|', 'emoji', 'image', 'link', 'code-block', 'table', '|', 'dayAndNight', 'draft', 'summit'];
+            return ['comeBack','undo', 'redo', '|', 'bold', 'italic', 'del', 'hr', 'quote', '|', 'h1', 'h2', 'h3', 'h4', 'h5', 'h6', '|', 'list-ul', 'list-ol', '|', 'fullscreen', 'info', 'watch', 'goto-line', '|', 'emoji', 'image', 'link', 'code-block', 'table', '|', 'dayAndNight', 'draft', 'summit','userIcon'];
         },
         toolbarIconTexts: {
             draft: '保存草稿',
             summit: '发布文章',
             dayAndNight: '切换日间/夜间模式',
-            comeBack: "<i class='fa fa-arrow-left'></i><span>&nbsp;&nbsp;回到主页</span>"
+            comeBack: "<i class='fa fa-arrow-left'></i><span>&nbsp;&nbsp;回到主页</span>",
+            userIcon: userIconTag
         },
-        // toolbarCustomIcons: {
-        //     comeBack: "<i class='fa fa-arrow-left'></i><span>回到主页</span>"
-        // },
         toolbarHandlers: {
             dayAndNight: function () {
                 console.log('dayNightMode = ' + dayNightMode);
