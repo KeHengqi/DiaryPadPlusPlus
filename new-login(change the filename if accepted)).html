@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Login</title>
+    <link rel="stylesheet" href="./materialize/css/materialize.min.css">
+    <link rel="stylesheet" href="./css/new-login.css">
+    <link href="./font-awesome-4.7.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <script src="./materialize/js/materialize.min.js"></script>
+    <script src="./js/jquery-3.4.1.min.js"></script>
+    <script src="./js/jquery.backstretch.min.js"></script>
+    <script src="./js/login-script.js"></script>
+    <script src="./materialize/js/materialize.min.js"></script>
+</head>
+<body>
+    <div id="login-form-container" class="z-depth-5">
+        <div id="icon-container" style="background-image: url(./img/bird.jpg);"></div>
+        <div class="row">
+            <form class="col s12">
+                <div class="row">
+                    <div class="input-field col s12">
+                        <i class="fa fa-user-circle-o prefix"></i>
+                        <input type="text" id="user-name" class="validate">
+                        <label for="user-name">User name</label>
+                    </div>
+                    <div class="input-field col s12">
+                        <i class="fa fa-lock prefix"></i>
+                        <input type="text" id="password" class="validate">
+                        <label for="password">Password</label>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="switch center">
+                        <label>
+                            Remember me
+                            <input type="checkbox">
+                            <span class="lever"></span>
+                        </label>
+                    </div>
+                </div>
+                <div class="row">
+                    <div>
+                        <a class="waves-effect waves-light btn col s12 cyan">Login</a>
+                    </div>
+                </div>
+                <div class="row">
+                    <div>
+                        <a class="waves-effect waves-light btn col s12 cyan">View as guest</a>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+</body>
+</html>

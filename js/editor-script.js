@@ -16,7 +16,7 @@ $(document).ready(function () {
         gotoLine: true,
         placeholder: 'Enjoy Writing in DiaryPad...',
         toolbarIcons: function () {
-            return ['comeBack','undo', 'redo', '|', 'bold', 'italic', 'del', 'hr', 'quote', '|', 'h1', 'h2', 'h3', 'h4', 'h5', 'h6', '|', 'list-ul', 'list-ol', '|', 'watch', 'goto-line', '|', 'emoji', 'image', 'link', 'code-block', 'table', '||', 'dayAndNight', 'draft', 'summit','userIcon'];
+            return ['comeBack','undo', 'redo', '|', 'bold', 'italic', 'del', 'hr', 'quote', '|', 'h1', 'h2', 'h3', 'h4', 'h5', 'h6', '|', 'list-ul', 'list-ol', '|', 'fullscreen', 'info', 'watch', 'goto-line', '|', 'emoji', 'image', 'link', 'code-block', 'table', '|', 'dayAndNight', 'draft', 'summit','userIcon'];
         },
         toolbarIconTexts: {
             draft: '保存草稿',

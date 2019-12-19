@@ -1,5 +1,6 @@
-//let pic_ori_width = $('.odd-recommendation-pic').css('width');
-//let pic_ori_height = $('.eve-recommendation-pic').css('height');
+// document.getElementById('to-edit-page').addEventListener('click',function(){
+//     window.location.href='./editor.html'
+// });
 
 $('#to-edit-page').click(function(){
     window.location.href = './editor.html';
