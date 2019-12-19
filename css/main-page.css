@@ -37,12 +37,12 @@ html, body {
     width: 40%;
 }
 
-.article-title{
+.article-title {
     font-size: 25px;
     line-height: 50px;
 }
 
-.article-view-and-comment{
+.article-view-and-comment {
     font-size: 15px;
     font-family: 'Noto Serif SC', serif;
 }
@@ -76,7 +76,7 @@ html, body {
     background-size: cover;
 }
 
-.eve-recommendation-pic{
+.eve-recommendation-pic {
     width: 50%;
     height: 100%;
     position: relative;
@@ -86,25 +86,25 @@ html, body {
     border-radius: 7px;
 }
 
-.eve-recommendation-para{
+.eve-recommendation-para {
     width: 50%;
     height: 100%;
     padding-top: 3%;
     padding-left: 5%;
 }
 
-.article-abstract{
+.article-abstract {
     width: 85%;
     text-justify: inter-ideograph;
     text-indent: 2em;
 }
 
-.bottom-block{
+.bottom-block {
     width: 100%;
     height: 200px;
 }
 
-.next-button{
+.next-button {
     margin: 0 auto;
     margin-top: 4%;
     width: 10%;
@@ -116,7 +116,7 @@ html, body {
     vertical-align: middle;
 }
 
-.tool{
+.tool {
     position: absolute;
     left: 95%;
     top: 40%;
@@ -125,4 +125,8 @@ html, body {
     border-radius: 7px;
     box-shadow: 0px 1px 4px grey;
     opacity: 0.4;
+}
+
+.tool:hover {
+    cursor: pointer;
 }
