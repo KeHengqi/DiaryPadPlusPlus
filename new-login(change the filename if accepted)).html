@@ -21,12 +21,12 @@
 						var pass = $("#password").val();
 						if(user==""||user==null||pass==null||pass==""){
 							if(user==""||user==null){
-                                Materialize.toast("Username can't be empty!",3000);
-
+                                Materialize.toast("Username can't be empty!",5000);
+                                $("#user-name").attr("data-tooltip","Username can't be empty!");
 								//$("#erroruser").text("Username/Email can't be empty!");
 							}	
 							if(pass==""||pass==null){
-                                Materialize.toast("Password can't be empty!",3000);
+                                Materialize.toast("Password can't be empty!",5000);
 
 								//$("#errorpass").text("Password can't be empty!");
 							}
@@ -42,7 +42,7 @@
 </head>
 <body>
     <div id="login-form-container" class="z-depth-5">
-        <div id="icon-container" style="background-image: url(./img/bird.jpg);"></div>
+        <div id="icon-container" class="circle" style="background-image: url(./img/bird.jpg);"></div>
         <div class="row">
             <form class="col s12">
                 <div class="row">
@@ -68,7 +68,7 @@
                 </div>
                 <div class="row">
                     <div>
-                        <input type="button" class="waves-effect waves-light btn col s12 cyan" value="Login" id="loginButton"></input>
+                        <a  class="waves-effect waves-light btn col s12 cyan" value="Login" id="loginButton">Login</a>
                     </div>
                 </div>
                 <div class="row">
