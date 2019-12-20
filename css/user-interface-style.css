@@ -62,15 +62,3 @@ html, body {
     margin-top: 30px;
     margin-bottom: 10px;
 }
-
-#article-2 {
-    animation-delay: 520ms;
-}
-
-#article-3 {
-    animation-delay: 1040ms;
-}
-
-#article-4 {
-    animation-delay: 1560ms;
-}
