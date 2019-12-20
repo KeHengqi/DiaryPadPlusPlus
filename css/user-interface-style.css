@@ -1,0 +1,84 @@
+html, body {
+    width: 100%;
+    height: 100%;
+}
+
+#Container {
+    width: 75%;
+    height: 100%;
+    margin: 0 auto;
+    margin-top: 0;
+}
+
+#user-header {
+    margin-top: 30px;
+    height: 320px;
+    width: 100%;
+    border-radius: 10px;
+}
+
+#header-img {
+    background-image: url('../img/user-interface-default-header.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 60%;
+    width: 100%;
+    border-radius: inherit;
+}
+
+#header-info {
+    height: 40%;
+    width: 100%;
+    border-radius: inherit;
+    z-index: 1000;
+}
+
+#header-user-icon img {
+    float: right;
+    padding: 0;
+    height: 147px;
+    width: 147px;
+    margin-right: 5%;
+    margin-top: 155px;
+    border: 3px solid white;
+    background-image: url('../img/bird.jpg');
+    border-radius: 100%;
+}
+
+#header-info-title {
+    margin-left: 10%;
+}
+
+#release-aritcles-container {
+    float: left;
+    margin-top: 5vh;
+    width: 100%;
+    height: 40vh;
+    border-radius: 10px;
+}
+
+#release-articles-base {
+    height: 100%;
+    width: 75%;
+    border-radius: inherit;
+    background-color: white;
+}   
+
+#other-information-container {
+    position: absolute;
+    left: 70%;
+    margin-top: 5vh;
+    width: 17%;
+    height: 50%;
+    border-radius: 10px;
+    background-color: white;
+}
+
+.release-aritcles {
+    width: 100%;
+    height: 32vh;
+    background-color: white;
+    border-radius: inherit;
+    margin-top: 30px;
+    margin-bottom: 10px;
+}
