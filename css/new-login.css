@@ -14,19 +14,23 @@ body {
     top: 50%;
     transform: translate(-50%, -50%);
     height: 600px;
-    width: 25%;
-    background-color:rgba(245, 239, 239, 0.973);
+    width: 400px;
+    background-color: rgba(245, 239, 239, 0.973);
     border-radius: 3%;
     opacity: 0.8;
+}
+
+@media screen and (max-width: 411px) {
+    #login-form-container {
+        height: 500px;
+        width: 300px;
+    }
 }
 
 #icon-container {
     margin-top: 7%;
     margin-left: 33%;
-
-
     width: 40%;
-
     background-size: cover;
     background-origin: border-box;
     background-repeat: no-repeat;
@@ -34,9 +38,7 @@ body {
     /* background-color: red; */
 }
 
-
-
-.input-field input[type="text"]:focus + label {
+.input-field input[type="text"]:focus+label {
     color: #00bcd4;
 }
 
@@ -50,7 +52,7 @@ body {
     color: #00bcd4;
 }
 
-.switch label input[type=checkbox]:checked + .lever {
+.switch label input[type=checkbox]:checked+.lever {
     background-color: #00bcd4;
 }
 
