@@ -13,7 +13,7 @@ body {
     left: 50%;
     top: 50%;
     transform: translate(-50%, -50%);
-    height: 73%;
+    height: 600px;
     width: 25%;
     background-color:rgba(245, 239, 239, 0.973);
     border-radius: 3%;
@@ -23,8 +23,7 @@ body {
 #icon-container {
     margin-top: 7%;
     margin-left: 33%;
-    height: 27% !important;
-    width: 36% !important;
+    width: 40%;
     background-size: cover;
     background-origin: border-box;
     background-repeat: no-repeat;
