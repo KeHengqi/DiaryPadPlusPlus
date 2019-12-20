@@ -9,6 +9,7 @@
     <script src="./js/jquery-3.4.1.min.js"></script>
     <script src="./materialize/js/materialize.min.js"></script>
     <script src="./js/wow.min.js"></script>
+    <script src="./js/jquery.backstretch.min.js"></script>
     <script>new WOW().init()</script>
     <link href="./css//main-page.css" rel="stylesheet" type="text/css" />
     <link rel="stylesheet" href="./materialize/css/materialize.min.css">
@@ -16,6 +17,7 @@
     <link href="https://fonts.googleapis.com/css?family=Noto+Serif+SC&display=swap" rel="stylesheet">
     <link href="./css/scrollbar-and-selection.css" rel="stylesheet" type="text/css">
     <link rel="stylesheet" href="./animate.css/animate.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Noto+Sans+TC|Noto+Serif+TC&display=swap" rel="stylesheet">
 </head>
 
 <body>
@@ -31,6 +33,14 @@
             </ul>
         </div>
     </nav>
+    <div id="top-pic" style="background-image: url('../img/top-pic.jpg');">
+        <div id="top-title" class="center">
+            Memorize your highlight
+        </div>
+        <div id="down-arrow-container" class="center">
+            <i id="down-arrow" class="fa fa-arrow-down fa-3x" aria-hidden="true"></i>
+        </div>
+    </div>
     <section id="page-container">
         <div id="recommendation-head">
             <i class="fa fa-paper-plane fa-2x" style="color: grey;">
@@ -195,6 +205,11 @@
             recommendation[i].classList.add('wow');
             recommendation[i].classList.add('fadeInUp');
         }
+        $(function () {
+            $('#top-pic').backstretch([
+                './img/top-pic.jpg'
+            ])
+        });
     </script>
 </body>
 

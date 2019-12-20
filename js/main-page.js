@@ -1,6 +1,4 @@
-// document.getElementById('to-edit-page').addEventListener('click',function(){
-//     window.location.href='./editor.html'
-// });
+$('.tool').css('visibility','hidden');
 
 $('#to-edit-page').click(function(){
     window.location.href = './editor.html';
@@ -17,3 +15,5 @@ window.onscroll = function(){
     let top = document.documentElement.scrollTop || document.body.scrollTop;
     $('.tool').css('top',top_pos + top + 'px');
 };
+
+
