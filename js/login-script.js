@@ -13,4 +13,8 @@ $(document).ready(function () {
         e.preventDefault();
         $(location).attr('href', 'http://www.baidu.com');
     });
+    $('#view-as-guest-button').click(function (e) { 
+        e.preventDefault();
+        $(location).attr('href', './main-page.html');
+    });
 });
