@@ -23,7 +23,10 @@ body {
 #icon-container {
     margin-top: 7%;
     margin-left: 33%;
+
+
     width: 40%;
+
     background-size: cover;
     background-origin: border-box;
     background-repeat: no-repeat;
