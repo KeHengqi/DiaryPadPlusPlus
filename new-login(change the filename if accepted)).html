@@ -15,29 +15,28 @@
     <script src="./js/login-script.js"></script>
     <script src="./materialize/js/materialize.min.js"></script>
 
-    <script type="text/javascript" >
-        $(document).ready(function(){
-            $("#loginButton").click(function(){
-						var user = $("#user-name").val();
-						var pass = $("#password").val();
-						if(user==""||user==null||pass==null||pass==""){
-							if(user==""||user==null){
-                                Materialize.toast("Username can't be empty!",3000);
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $("#loginButton").click(function () {
+                var user = $("#user-name").val();
+                var pass = $("#password").val();
+                if (user == "" || user == null || pass == null || pass == "") {
+                    if (user == "" || user == null) {
+                        Materialize.toast("Username can't be empty!", 3000);
 
-								//$("#erroruser").text("Username/Email can't be empty!");
-							}	
-							if(pass==""||pass==null){
-                                Materialize.toast("Password can't be empty!",3000);
+                        //$("#erroruser").text("Username/Email can't be empty!");
+                    }
+                    if (pass == "" || pass == null) {
+                        Materialize.toast("Password can't be empty!", 3000);
 
-								//$("#errorpass").text("Password can't be empty!");
-							}
-						}
-						else{
-						window.location.href="main-page.html";
-						}
-					});
+                        //$("#errorpass").text("Password can't be empty!");
+                    }
+                } else {
+                    window.location.href = "main-page.html";
+                }
+            });
         });
-            
+
     </script>
 
 </head>
@@ -52,12 +51,14 @@
                 <div class="row">
                     <div class="input-field col s12">
                         <i class="fa fa-user-circle-o prefix"></i>
-                        <input type="text" id="user-name" class="validate tooltipped" data-position = "right" data-delay="50" data-tooltip="Please input username">
+                        <input type="text" id="user-name" class="validate tooltipped" data-position="right"
+                            data-delay="50" data-tooltip="Please input username">
                         <label for="user-name">User name</label>
                     </div>
                     <div class="input-field col s12">
                         <i class="fa fa-lock prefix"></i>
-                        <input type="text" id="password" class="validate tooltipped" data-position="right" data-delay="50" data-tooltip="Please input password" >
+                        <input type="text" id="password" class="validate tooltipped" data-position="right"
+                            data-delay="50" data-tooltip="Please input password">
                         <label for="password">Password</label>
                     </div>
                 </div>
@@ -75,9 +76,8 @@
                 </div>
                 <div class="row">
                     <div>
-
-                        <input type="button" class="waves-effect waves-light btn col s12 cyan" value="Login" id="loginButton"></input>
-
+                        <input type="button" class="waves-effect waves-light btn col s12 cyan" value="Login"
+                            id="loginButton"></input>
                     </div>
                 </div>
                 <div class="row">

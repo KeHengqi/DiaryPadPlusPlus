@@ -4,9 +4,10 @@ html, body {
 }
 
 #Container {
-    width: 60%;
-    height: 30%;
+    width: 75%;
+    height: 100%;
     margin: 0 auto;
+    margin-top: 0;
 }
 
 #user-header {
@@ -49,9 +50,28 @@ html, body {
 }
 
 #release-aritcles-container {
+    float: left;
+    margin-top: 5vh;
     width: 100%;
-    height: 100%;
+    height: 40vh;
     border-radius: 10px;
+}
+
+#release-articles-base {
+    height: 100%;
+    width: 75%;
+    border-radius: inherit;
+    background-color: white;
+}   
+
+#other-information-container {
+    position: absolute;
+    left: 70%;
+    margin-top: 5vh;
+    width: 17%;
+    height: 50%;
+    border-radius: 10px;
+    background-color: white;
 }
 
 .release-aritcles {
