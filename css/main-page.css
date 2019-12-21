@@ -122,8 +122,9 @@ main {
 
 .tool {
     position: absolute;
-    left: 95%;
+    left: 120%;
     top: 40%;
+    /* margin-right: 100000px; */
     width: 70px;
     height: 150px;
     border-radius: 7px;
@@ -152,6 +153,83 @@ main {
     padding-top: 11.5%;
 }
 
+@keyframes down-arrow-up-and-down {
+    from {
+        top: 17%;
+    }
+    to {
+        top: 20%;
+    }
+}
+
+@-webkit-keyframes down-arrow-up-and-down {
+    from {
+        top: 17%;
+    }
+    to {
+        top: 20%;
+    }
+}
+
 #down-arrow {
     color: whitesmoke;
+}
+
+@keyframes tool-move-in-animation {
+    form {
+        left: 120%;
+    }
+    to {
+        left: 95%;
+    }
+}
+
+@-webkit-keyframes tool-move-in-animation {
+    form {
+        left: 120%;
+    }
+    to {
+        left: 95%;
+    }
+}
+
+@keyframes tool-move-out-animation {
+    form {
+        left: 95%;
+    }
+    to {
+        left: 120%;
+    }
+}
+
+@-webkit-keyframes tool-move-out-animation {
+    form {
+        left: 95%;
+    }
+    to {
+        left: 120%;
+    }
+}
+
+.tool-move-out {
+    animation: tool-move-out-animation 10s ease-in-out forwards;
+    -webkit-animation: tool-move-out-animation 10s ease-in-out forwards;
+}
+
+.tool-move-in {
+    animation: tool-move-in-animation 0.5s ease-in-out forwards; 
+    -webkit-animation: tool-move-in-animation 0.5s ease-in-out forwards;
+}
+
+#down-arrow-container {
+    width: 30% !important;
+    position: relative;
+    left: 50%;
+    top: 20%;
+    animation: down-arrow-up-and-down 1s ease-in-out infinite alternate;
+    -webkit-animation: down-arrow-up-and-down 1s ease-in-out infinite alternate;
+}
+
+html {
+    overflow-x: hidden;
 }
