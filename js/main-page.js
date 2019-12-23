@@ -17,26 +17,16 @@ window.onscroll = function () {
 
     let scrollHeight = $(document).scrollTop();
     let hei = $('#recommendation-head').offset().top - 11;
-    console.log('scrollHeight = ' + scrollHeight);
-    console.log('hei = ' + hei);
 
     let toolFatherWidth = parseInt($('#page-container').css('width'));
-    console.log('page height: ' + $('#page-container').css('width'));
 
     let toolFatherWidth120 = 1.2 * toolFatherWidth;
     let toolFatherWidth95 = 0.95 * toolFatherWidth;
-    console.log($('.tool').css('left'));
-    console.log(toolFatherWidth120);
-    console.log(toolFatherWidth95);
-
-
 
     let sub1 = parseFloat($('.tool').css('left')) - toolFatherWidth120;
     let sub2 = parseFloat($('.tool').css('left')) - toolFatherWidth95;
     let heiSubAbs = Math.abs(scrollHeight - hei);
     let heiSub = hei - scrollHeight;
-    console.log('heiSubAbs: ' + heiSubAbs);
-    console.log('heiSub: ' + heiSub);
     
     if(heiSub > 0) {
         $('.tool').removeClass('tool-move-in');
@@ -44,6 +34,12 @@ window.onscroll = function () {
     } else if (heiSub <= 0) {
         $('.tool').removeClass('tool-move-out');
         $('.tool').addClass('tool-move-in');
+    }
+
+    if(scrollHeight >= 500){
+        $('#back-to-top-button').addClass('show');
+    } else {
+        $('#back-to-top-button').removeClass('show');
     }
 };
 
@@ -56,6 +52,12 @@ $('#down-arrow-container').click(function (e) {
     );
 });
 
-$(document).scroll(function () {
-
+$('#back-to-top-button').click(function (e) { 
+    e.preventDefault();
+    $('html, body').animate({
+        scrollTop: 0
+    }, 300, 'easeInOutQuad');
 });
+
+
+
