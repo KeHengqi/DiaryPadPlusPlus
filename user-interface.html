@@ -6,9 +6,22 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>User Interface</title>
+    <script>
+        window.addEventListener('pageshow', function (event) {
+            if (event.persisted) {
+                location.reload();
+            } else {
+                if (sessionStorage.getItem('refresh') === 'true') {
+                    location.reload();
+                }
+            }
+            sessionStorage.removeItem('refresh');
+        }); 
+    </script>
     <link rel="stylesheet" href="./css/user-interface-style.css">
     <link rel="stylesheet" href="./materialize/css/materialize.min.css">
     <link rel="stylesheet" href="./animate.css/animate.min.css">
+    <link rel="stylesheet" href="./css/scrollbar-and-selection.css">
     <script src="./js/jquery-3.4.1.min.js"></script>
     <script src="./materialize/js/materialize.min.js"></script>
     <script src="./js/wow.min.js"></script>
