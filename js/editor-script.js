@@ -43,6 +43,17 @@ $(document).ready(function () {
             },
             comeBack: function(){
                 window.location.href = './main-page.html'
+            },
+            summit: function () {
+                let txt = editor.getMarkdown();
+                $.post("./php/submitArticle.php", { article: txt }, function (data) {
+                    alert(data);
+                    if (data == 1) {
+                        alert("submit successfully!");
+                    } else {
+                        alert("sumit failed!");
+                    }
+                });
             }
         }
     });
