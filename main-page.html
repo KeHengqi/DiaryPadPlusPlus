@@ -26,6 +26,8 @@
     <script src="./materialize/js/materialize.min.js"></script>
     <script src="./js/wow.min.js"></script>
     <script src="./js/jquery.backstretch.min.js"></script>
+    <script src="./editor.md/editormd.min.js"></script>
+    <script src="./js/marked.min.js"></script>
     <script>new WOW().init()</script>
     <link href="./css/main-page.css" rel="stylesheet" type="text/css" />
     <link rel="stylesheet" href="./materialize/css/materialize.min.css">
@@ -34,6 +36,8 @@
     <link href="./css/scrollbar-and-selection.css" rel="stylesheet" type="text/css">
     <link rel="stylesheet" href="./animate.css/animate.min.css">
     <link href="https://fonts.googleapis.com/css?family=Noto+Sans+TC|Noto+Serif+TC&display=swap" rel="stylesheet">
+
+
 </head>
 
 <body>
@@ -71,7 +75,7 @@
         </div>
 
         <div id="Container">
-            <div class="recommendation hoverable" id="re1">
+            <div class="recommendation hoverable" id="re1" data-articleid="">
                 <div style="background-image: url('./img/img01.jpg');" class="odd-recommendation-pic"></div>
                 <div class="odd-recommendation-para article">
                     <i class="fa fa-clock-o" style="color: grey;">
@@ -100,7 +104,7 @@
 
 
 
-            <div class="recommendation hoverable" id="re2">
+            <div class="recommendation hoverable" id="re2" data-articleid="">
                 <div class="eve-recommendation-para article">
                     <i class="fa fa-clock-o" style="color: grey;">
                         <span class="article-view-and-comment">&nbsp;发布于14小时前</span>
@@ -121,7 +125,7 @@
             </div>
 
 
-            <div class="recommendation hoverable" id="re3">
+            <div class="recommendation hoverable" id="re3" data-articleid="">
                 <div style="background-image: url('./img/article-pic2.jpg');" class="odd-recommendation-pic"></div>
                 <div class="odd-recommendation-para article">
                     <i class="fa fa-clock-o" style="color: grey;">
@@ -143,7 +147,7 @@
                 </div>
             </div>
 
-            <div class="recommendation hoverable" id="re4">
+            <div class="recommendation hoverable" id="re4" data-articleid="">
                 <div class="eve-recommendation-para article">
                     <i class="fa fa-clock-o" style="color: grey;">
                         <span class="article-view-and-comment">&nbsp;发布于15天前</span>
@@ -165,7 +169,7 @@
                 <div style="background-image: url('./img/article-pic3.jpg');" class="eve-recommendation-pic"></div>
             </div>
 
-            <div class="recommendation hoverable" id="re5">
+            <div class="recommendation hoverable" id="re5" data-articleid="">
                 <div style="background-image: url('./img/article-pic4.jpg');" class="odd-recommendation-pic"></div>
                 <div class="odd-recommendation-para article">
                     <i class="fa fa-clock-o" style="color: grey;">
@@ -188,7 +192,7 @@
             </div>
 
 
-            <div class="recommendation hoverable" id="re6">
+            <div class="recommendation hoverable" id="re6" data-articleid="">
                 <div class="eve-recommendation-para article">
                     <i class="fa fa-clock-o" style="color: grey;">
                         <span class="article-view-and-comment">&nbsp;发布于18天前</span>

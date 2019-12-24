@@ -31,6 +31,7 @@ main {
     margin-top: 60px;
     height: 300px;
     width: 50%;
+    overflow: hidden;
 }
 
 #recommendation-head {
@@ -98,6 +99,7 @@ main {
 }
 
 .article-abstract {
+    height: 10px !important;
     width: 85%;
     text-justify: inter-ideograph;
     text-indent: 2em;
