@@ -2,6 +2,22 @@
 <html lang="en">
 
 <head>
+    <script>
+        // var flag = 0;
+        //每次进入页面都强制刷新
+        window.addEventListener('pageshow', function (event) {
+            if (event.persisted) {
+                location.reload();
+            } else {
+                console.log('reload');
+                
+                if (sessionStorage.getItem('refresh') === 'true') {
+                    location.reload();
+                }
+            }
+            sessionStorage.removeItem('refresh');
+        });    
+    </script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
@@ -11,7 +27,7 @@
     <script src="./js/wow.min.js"></script>
     <script src="./js/jquery.backstretch.min.js"></script>
     <script>new WOW().init()</script>
-    <link href="./css//main-page.css" rel="stylesheet" type="text/css" />
+    <link href="./css/main-page.css" rel="stylesheet" type="text/css" />
     <link rel="stylesheet" href="./materialize/css/materialize.min.css">
     <link href="./font-awesome-4.7.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
     <link href="https://fonts.googleapis.com/css?family=Noto+Serif+SC&display=swap" rel="stylesheet">
@@ -41,6 +57,7 @@
             <i id="down-arrow" class="fa fa-arrow-down fa-3x" aria-hidden="true"></i>
         </div>
     </div>
+    <a id="back-to-top-button"></a>
     <section id="page-container">
         <div id="recommendation-head">
             <i class="fa fa-paper-plane fa-2x" style="color: grey;">
@@ -198,6 +215,7 @@
         </div>
 
     </section>
+    
     <script src="./js/main-page.js"></script>
     <script>
         let recommendation = document.getElementsByClassName('recommendation');
