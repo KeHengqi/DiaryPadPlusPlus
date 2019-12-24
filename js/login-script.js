@@ -18,3 +18,4 @@ $(document).ready(function () {
         $(location).attr('href', './main-page.html');
     });
 });
+
